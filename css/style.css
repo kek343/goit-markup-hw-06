@@ -28,7 +28,6 @@ ul {
   list-style: none;
 }
 
-
 img {
   display: block;
   max-width: 100%;
@@ -44,7 +43,7 @@ img {
   padding-bottom: 24px;
 }
 .container {
-  width: 1158px;
+  max-width: 290px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -173,11 +172,11 @@ img {
 .title {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.1;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   max-width: 496px;
 }
 /** ====== BUTTON ======= */
@@ -249,8 +248,6 @@ img {
   text-align: center;
   width: 100%;
   text-transform: capitalize;
-
-
 }
 .achievements-list {
   gap: 72px;
@@ -271,6 +268,7 @@ img {
 /** ====== TEAM ======= */
 .team-section {
   background-color: #f4f4fd;
+  display: flex;
 }
 
 .list-title {
@@ -292,17 +290,19 @@ img {
   gap: 24px;
   flex-wrap: wrap;
 }
+
 .team-name-container {
   padding: 32px 0;
 }
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  width: 100%;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  margin-bottom: 72px;
 }
 .team-img {
   max-width: 100%;
@@ -366,6 +366,8 @@ img {
 .portfolio-container {
   border-top: none;
   margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
 }
 .list-title {
   margin-bottom: 72px;
@@ -373,7 +375,7 @@ img {
 .portfolio-item {
   text-align: center;
   background-color: #fff;
-  width: calc((100% - 48px) / 3);
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-img-container {
@@ -431,6 +433,10 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -442,8 +448,9 @@ img {
   text-decoration: none;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  display: inline-block;
-  margin-bottom: 16px;
+  display: flex;
+  margin-bottom: 17px;
+  justify-content: center;
 }
 
 .span-footer-logo {
@@ -462,11 +469,13 @@ img {
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  width: 264px;
+  width: auto;
+  margin-bottom: 72px;
 }
 .footer-section {
   flex-direction: column;
   margin-right: 120px;
+  margin-right: 0;
 }
 
 .footer-text-soc {
@@ -477,6 +486,8 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
   margin-top: 0;
+  justify-content: center;
+  display: flex;
 }
 .footer-list {
   display: flex;
@@ -508,7 +519,8 @@ img {
 }
 .footer-section-box {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /**======== backdrop  ========**/
 .backdrop {
@@ -723,7 +735,8 @@ img {
   margin-right: 4px;
 }
 .footer-send {
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
 }
 .footer-text-send {
   color: #fff;
@@ -732,6 +745,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
 }
 
 .footer-button {
@@ -739,7 +755,7 @@ img {
   border: none;
   border-radius: 4px;
   color: #fff;
-  display: inline-flex;
+  display: flex;
   padding: 8px 24px;
   justify-content: center;
   font-weight: 500;
@@ -750,6 +766,7 @@ img {
   cursor: pointer;
   min-width: 165px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 
 .footer-button:hover,
@@ -765,7 +782,6 @@ img {
   padding-left: 16px;
   outline: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -795,6 +811,7 @@ img {
 .footer-form {
   display: flex;
   gap: 24px;
+  flex-direction: column;
 }
 .modal-field-area {
   margin-bottom: 16px;
