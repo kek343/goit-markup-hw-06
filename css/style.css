@@ -44,7 +44,6 @@ img {
 }
 .container {
   max-width: 290px;
-  padding: 0 15px;
   margin: 0 auto;
 }
 /** ====== LOGO ======= */
@@ -57,7 +56,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   font-size: 18px;
-  margin-right: 76px;
+ 
 }
 
 .span-header-logo {
@@ -71,23 +70,23 @@ img {
   line-height: 1.17;
 }
 /** ====== Header ======= */
-.header-container {
-  display: flex;
-}
+
 .header-top {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+
+  }
 .header-menu {
   list-style: none;
-  display: flex;
+  display: none;
   gap: 40px;
   padding-right: 332px;
 }
 .header-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header-link {
   color: #2e2f42;
@@ -102,6 +101,18 @@ img {
   position: relative;
   color: #404bbf;
 }
+.menu-bytton-svg {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.menu-bytton {
+margin-left: 16px;
+display: none;
+
+}
+
 .header-link.current::after {
   position: absolute;
   content: "";
@@ -124,7 +135,7 @@ img {
 
 .address-list {
   list-style: none;
-  display: flex;
+  display: none;
   gap: 40px;
 }
 
@@ -139,7 +150,11 @@ img {
 .address-link:focus {
   color: #404bbf;
 }
-
+.mob-menu {
+  width: 100vw;
+  height: 100wh;
+  background-color: #fff;
+}
 /** ====== TITLE ======= */
 .title-sectoin {
   background-color: #2e2f42;
@@ -261,7 +276,7 @@ img {
   color: #434455;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   line-height: 1.5;
   align-self: stretch;
 }
