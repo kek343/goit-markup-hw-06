@@ -45,6 +45,7 @@ img {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 /** ====== LOGO ======= */
 .header-logo {
@@ -196,6 +197,10 @@ img {
   letter-spacing: 0.2em;
   text-transform: capitalize;
 }
+.mob-menu-list {
+  color: #2e2f42;
+}
+
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -385,8 +390,9 @@ img {
   background-color: #f4f4fd;
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-name-container {
@@ -394,13 +400,12 @@ img {
 }
 .team-item {
   background-color: #ffffff;
-  width: 100%;
+  width: 0 auto;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  margin-bottom: 72px;
 }
 .team-img {
   max-width: 100%;
@@ -571,9 +576,10 @@ img {
   margin-bottom: 72px;
 }
 .footer-section {
+  display: flex;
   flex-direction: column;
-  margin-right: 120px;
-  margin-right: 0;
+  align-items: flex-start;
+  width: 264px;
 }
 
 .footer-text-soc {
@@ -835,9 +841,13 @@ img {
 .agree-text {
   margin-right: 4px;
 }
+
 .footer-send {
   display: flex;
   flex-direction: column;
+}
+.agree-link-box {
+  display: inline;
 }
 .footer-text-send {
   color: #fff;
@@ -925,21 +935,116 @@ img {
 
 @media screen and (min-width: 320px) {
   .container {
-    max-width: 308px;
+    max-width: 320px;
+  }
+  .achievement-icon-container {
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 752px;
+    max-width: 768px;
   }
   .achievement-item {
-    max-width: 356px;
+    width: calc((100% - 24px) / 2);
   }
   .achievements-list {
-    width: calc((100% - 24px) / 2);
+    gap: 72px 24px;
   }
   .achievements-title {
     justify-content: left;
+  }
+  .team-list {
+    gap: 64px 24px;
+  }
+  .portfolio-item {
+    width: 356px;
+  }
+  .portfolio-list {
+    row-gap: 78px;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-send {
+    align-items: flex-start;
+    margin-left: 92px;
+  }
+  .footer-section-box {
+    gap: 0 24px;
+    justify-content: flex-start;
+  }
+  .footer-section {
+    margin-left: 92px;
+  }
+  .footer-form {
+    flex-direction: row;
+  }
+  .footer-text {
+    margin-bottom: 0px;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .achievement-icon-container {
+    display: flex;
+  }
+  .achievement-item {
+    width: 264px;
+  }
+  .achievements-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .achievements-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .achievements-text {
+    font-weight: 400;
+  }
+  .team-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .team-item {
+    width: 264px;
+  }
+  .footer-text-send {
+    margin-top: 0;
+  }
+  .footer-section-box {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .footer-send {
+    margin-left: 0;
+  }
+  .footer-input {
+    opacity: 1;
+  }
+  .footer-section {
+    margin-left: 0;
+    margin-right: 120px;
+  }
+  .footer-box {
+    margin-right: 80px;
   }
 }
