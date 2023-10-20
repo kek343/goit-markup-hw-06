@@ -201,18 +201,22 @@ img {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 .mob-menu-list {
   color: #2e2f42;
 }
-
+.mob-color {
+  color: #4D5AE5;
+}
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
-.address-mob-list {
+.mob-tel-color {
   color: #434455;
+}
+.address-mob-list {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -555,7 +559,7 @@ img {
 /** ====== FOOTER ======= */
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1066,7 +1070,10 @@ flex-shrink: 0;
   .container {
     max-width: 1158px;
   }
-  
+  .footer {
+    padding: 100px 0;
+  }
+    
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
