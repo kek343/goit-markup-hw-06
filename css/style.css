@@ -1023,11 +1023,6 @@ flex-shrink: 0;
     flex-direction: column;
     align-items: flex-start;
   }
-  .footer-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .footer-send {
     align-items: flex-start;
     margin-top: 0;
@@ -1055,12 +1050,10 @@ flex-shrink: 0;
   }
   .address-list {
     display: flex;
+    margin-left: 122px;
   }
   .header-menu {
     display: flex;
-  }
-  .address-list {
-    margin-left: 122px;
   }
   
 
